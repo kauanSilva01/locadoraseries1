@@ -1,0 +1,33 @@
+POST http://localhost:3333/locadora
+Content-Type: application/json
+
+{
+    "nome": "smith",
+    "diretor": "robert",
+    "neps": "epsodios",
+    "nhoras": "hrs"
+}
+
+###
+
+GET http://localhost:3333/locadora
+
+###
+
+GET http://localhost:3333/locadora?search=Aula
+
+###
+
+PUT http://localhost:3333/locadora/1211cc2e-af3a-421e-b8e4-f402b27fe663
+Content-Type: application/json
+
+{
+    "nome": "locadora: Aula",
+    "diretor": "diretor",
+    "neps": "jois",
+    "nhoras": "sss"
+}
+
+###
+
+DELETE http://localhost:3333/locadora/1211cc2e-af3a-421e-b8e4-f402b27fe663
